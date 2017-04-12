@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <title>ENG1003 week 3 prac exercise template</title>
         <style>
             #outputArea {
@@ -37,8 +40,8 @@
 
         <!--<button onclick="panToMonashClayton()"> Pan to Monash Clayton </button>  -->
 <!--    <button onclick="showInfoLable()"> Show Label </button> -->
- <button onclick="showMarker()"> Show Marker </button> 
-   <!--  <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="showAllMarker()"> Show All Markers </button> -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showMarker()"> Show Marker </button> 
+     <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="showAllMarker()"> Show All Markers </button> 
 <!--    <button onclick="showPath()"> Show path </button>    -->
 <!--    <button onclick="showPolygon()"> Show polygon </button> -->
        <div id="map"></div>
@@ -78,14 +81,15 @@
          
         }
                
-         var button1 = document.createElement('button');
+   /*      var button1 = document.createElement('button');
         var textNode = document.createTextNode('Show All Markers');
         button1.appendChild(textNode);
     button1.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
             button1.onclick = showAllMarker();
   componentHandler.upgradeElement(button1);
     
-  document.getElementById('map').appendChild(button1); 
+  document.getElementById('map').appendChild(button1); */
+            
         function setLocations()
         {
             var monashSports={
